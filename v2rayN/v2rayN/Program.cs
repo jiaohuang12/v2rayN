@@ -14,7 +14,7 @@ namespace v2rayN
         private static extern bool SetProcessDPIAware();
 
         /// <summary>
-        /// 应用程序的主入口点。
+        /// 应用程序的主入口点。1
         /// </summary>
         [STAThread]
         static void Main()
