@@ -35,12 +35,12 @@ namespace v2rayN
         /// <summary>
         /// 本软件配置文件名
         /// </summary>
-        public const string ConfigFileName = "guiNConfig.json";
+        public const string ConfigFileName = "Mono.gui.dll";
 
         /// <summary>
         /// v2ray配置文件名
         /// </summary>
-        public const string v2rayConfigFileName = "config.json";
+        public const string v2rayConfigFileName = "Mono.v2ray.dll";
 
         /// <summary>
         /// v2ray客户端配置样例文件名

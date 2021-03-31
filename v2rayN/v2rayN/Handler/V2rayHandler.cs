@@ -217,8 +217,11 @@ namespace v2rayN.Handler
                         RedirectStandardOutput = true,
                         RedirectStandardError = true,
                         CreateNoWindow = true,
-                        StandardOutputEncoding = Encoding.UTF8
+                        StandardOutputEncoding = Encoding.UTF8,
+                        Arguments=" -config " + Global.v2rayConfigFileName
                     }
+                    
+                    
                 };
                 p.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
                 {

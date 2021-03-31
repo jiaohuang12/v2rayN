@@ -25,9 +25,9 @@ namespace v2rayN.Forms
         public MainForm()
         {
             InitializeComponent();
-            this.ShowInTaskbar = false;
-            this.WindowState = FormWindowState.Minimized;
-            HideForm();
+            this.ShowInTaskbar = true;
+            //this.WindowState = FormWindowState.Minimized;
+            //HideForm();
             this.Text = Utils.GetVersion();
             Global.processJob = new Job();
 
@@ -77,7 +77,7 @@ namespace v2rayN.Forms
 
             LoadV2ray();
 
-            HideForm();
+            //HideForm();
 
         }
 
@@ -443,12 +443,7 @@ namespace v2rayN.Forms
 
         private void lvServers_DoubleClick(object sender, EventArgs e)
         {
-            int index = GetLvSelectedIndex();
-            if (index < 0)
-            {
-                return;
-            }
-            ShowServerForm(config.vmess[index].configType, index);
+            menuSetDefaultServer_Click(null, null);
         }
         private void ShowServerForm(int configType, int index)
         {
@@ -494,7 +489,7 @@ namespace v2rayN.Forms
                         menuSelectAll_Click(null, null);
                         break;
                     case Keys.C:
-                        menuExport2ShareUrl_Click(null, null);
+                        //menuExport2ShareUrl_Click(null, null);
                         break;
                     case Keys.V:
                         menuAddServers_Click(null, null);
